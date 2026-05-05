@@ -174,7 +174,7 @@ if user_question := st.chat_input("Ask a question about your documents..."):
 
     # Configure the Gemini SDK
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash")
 
     # Add user message to UI and history
     st.session_state.chat_history.append({"role": "user", "content": user_question})
